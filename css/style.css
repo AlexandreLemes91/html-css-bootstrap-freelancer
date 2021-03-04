@@ -28,6 +28,30 @@ body{
 /******************************************************************* 
 HEADER
  ********************************************************************/
+.darkblue{
+    background-color: rgb(44, 62, 80);
+}
+
+header.main-header .mynav{
+    margin-bottom: 0px;
+    border: 0;
+    background-color: transparent;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+header.main-header .container .navbar .mywhite{
+    padding-left: 0px;
+}
+
+header.main-header .container .navbar .mywhite,
+header.main-header .container .navbar .mywhite a{
+    color: rgb(255, 255, 255);
+}
+
+header.main-header .container .navbar .mywhite a:last-child{
+    padding-right: 0;
+}
 
 /*****************************************************************
 HERO 
