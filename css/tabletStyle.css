@@ -1,8 +1,24 @@
 @media screen and (max-width: 991px){
-    /******************************************************************* 
-    HEADER
-    ********************************************************************/
-    .fs-md-2rem{
-        font-size: 2rem;
+    h2{
+        font-size: 4rem;
     }
+
+    .center-bar i{
+        margin: 0 25px;
+    }
+
+    .short i{
+        margin: 0 10px;
+    }
+
+    .center-bar::before,
+    .center-bar::after{
+    width: 140px;
+    }
+    
+    .short.center-bar::before,
+    .short.center-bar::after{
+        width: 95px;
+    }
+    
 }

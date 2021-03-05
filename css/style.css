@@ -27,21 +27,25 @@
     font-weight: 600;
 }
 
-.fs2-5rem{
-    font-size: 2.5rem;
+.fs1-9rem{
+    font-size: 1.9rem;
 }
 
-.fs4rem{
-    font-size: 5rem;
-}
-
-.fs6rem{
+h1{
     font-size: 6rem;
 }
 
+h2{
+    font-size: 5rem;
+}
+
+h3{
+    font-size: 2.5rem;
+}
 
 .center-bar i{
     margin: 0 35px;
+    font-size: 2.5rem;
 }
 
 .center-bar::before,
@@ -59,6 +63,20 @@
 .dark.center-bar::after{
     background-color: rgb(44, 62, 80);
     border: 2px solid rgb(44, 62, 80);
+}
+
+.short.center-bar::before,
+.short.center-bar::after{
+    width: 140px;
+}
+
+.short i{
+    margin: 0 20px;
+}
+
+/* divs */
+.padding-section{
+    padding: 60px 0 90px;
 }
 
 .h-50{
@@ -113,10 +131,6 @@ section.hero .container img{
 /******************************************************************
 PORTFOLIO
 ******************************************************************/
-section.portfolio{
-    padding: 70px 0 90px;
-}
-
 .portfolio [class^="col"]{
     margin-top: 30px;
 }
@@ -128,7 +142,20 @@ section.portfolio img.img-rounded{
 /******************************************************************
 ABOUT
 ******************************************************************/
+a.btn.mybtn{
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    margin-top: 30px;
+}
 
+a.btn.mybtn i.m-right{
+    margin-right: 10px;
+}
+
+section.about .container > .row{
+    margin-top: 25px;
+}
 /******************************************************************
 CONTACT ME
 ******************************************************************/
