@@ -1,0 +1,24 @@
+@media screen and (max-width: 767px){
+    .fs-sm-3-5rem{
+        font-size: 3.5rem;
+    }
+
+    .fs-sm-2rem{
+        font-size: 2rem;
+    }
+
+    .center-bar i{
+        margin: 0 12px;
+    }
+    
+    .center-bar::before,
+    .center-bar::after{
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 70px;
+        background-color: white;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+}
