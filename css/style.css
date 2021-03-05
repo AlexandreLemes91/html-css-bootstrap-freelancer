@@ -159,3 +159,28 @@ section.about .container > .row{
 /******************************************************************
 CONTACT ME
 ******************************************************************/
+section.contact-me form.myform input,
+section.contact-me form.myform textarea{
+    border: 0 transparent;
+    border-bottom: 1px solid rgba(44, 62, 80, 0.25);
+    border-radius: 0px;
+    box-shadow: none;
+    padding: 0px;
+    height: 2rem;
+}
+
+section.contact-me .center-bar{
+    margin-bottom: 25px;
+}
+
+section.contact-me form.myform textarea{
+    height: 100%;
+}
+
+section.contact-me form.myform label{
+    margin-bottom: 0px;
+}
+
+section.contact-me form.myform button.mybtn{
+    background-color: ;
+}
