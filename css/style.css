@@ -6,12 +6,20 @@
 }
 
 /* BG - COLORS */
+.bg-blue{
+    background-color: rgb(58, 84,  109);
+}
+
 .bg-darkblue{
     background-color: rgb(44, 62, 80);
 }
 
 .bg-emerald{
     background-color: rgb(26, 188, 156);
+}
+
+.myemerald{
+    color: rgb(26, 188, 156);;
 }
 
 .mywhite{
@@ -27,10 +35,6 @@
     font-weight: 600;
 }
 
-.fs1-9rem{
-    font-size: 1.9rem;
-}
-
 h1{
     font-size: 6rem;
 }
@@ -41,6 +45,29 @@ h2{
 
 h3{
     font-size: 2.5rem;
+}
+
+p{
+    font-size: 2rem;
+}
+
+li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 5px;
+}
+
+ul{
+    padding-left: 0px;
+}
+
+.circle{
+    padding: 15px;
+    border-radius: 50%;
+}
+.circle i{
+    width: 20px;
+    height: 15px;
 }
 
 .center-bar i{
@@ -79,16 +106,8 @@ h3{
     padding: 60px 0 90px;
 }
 
-.h-50{
-    height: 50px;
-}
-
-.h-250{
-    height: 250px;
-}
-
-.h-500{
-    height: 500px;
+.sm-padding-section{
+    padding: 35px 0 50px;
 }
 
 /******************************************************************* 
@@ -142,7 +161,7 @@ section.portfolio img.img-rounded{
 /******************************************************************
 ABOUT
 ******************************************************************/
-a.btn.mybtn{
+section.about a.btn.mybtn{
     background-color: transparent;
     border-color: white;
     color: white;
@@ -156,6 +175,7 @@ a.btn.mybtn i.m-right{
 section.about .container > .row{
     margin-top: 25px;
 }
+
 /******************************************************************
 CONTACT ME
 ******************************************************************/
@@ -181,6 +201,10 @@ section.contact-me form.myform label{
     margin-bottom: 0px;
 }
 
-section.contact-me form.myform button.mybtn{
-    background-color: ;
+/******************************************************************
+TOP FOOTER
+******************************************************************/
+footer.top-footer li a.mybtn{
+    border-color: white;
+    background-color: transparent;
 }
