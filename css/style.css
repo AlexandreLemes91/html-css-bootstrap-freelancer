@@ -1,11 +1,15 @@
 /* UTILITIES */
+main{
+    padding-top: 80px;
+}
+
 .test{
     background-color: rgba(255, 255, 255, .25);
     border: 1px solid black;
     height: 100%;
 }
 
-/* BG - COLORS */
+/* BG - COLORS************************************************************** */
 .bg-blue{
     background-color: rgb(58, 84,  109);
 }
@@ -30,7 +34,7 @@
     background-color: lightskyblue;
 }
 
-/* TEXT */
+/* TEXT ***************************************************/
 .fw600{
     font-weight: 600;
 }
@@ -51,6 +55,7 @@ p{
     font-size: 2rem;
 }
 
+/* btn / link */
 li{
     display: inline-block;
     list-style: none;
@@ -70,6 +75,11 @@ ul{
     height: 15px;
 }
 
+.mybtn{
+    transition: 0.2s;
+}
+
+/* bars********************************************* */
 .center-bar i{
     margin: 0 35px;
     font-size: 2.5rem;
@@ -101,7 +111,7 @@ ul{
     margin: 0 20px;
 }
 
-/* divs */
+/* divs *******************************************************/
 .padding-section{
     padding: 60px 0 90px;
 }
@@ -113,6 +123,12 @@ ul{
 /******************************************************************* 
 HEADER
  ********************************************************************/
+header.main-header{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
 header.main-header .mynav{
     margin-bottom: 0px;
     border: 0;
@@ -158,6 +174,38 @@ section.portfolio img.img-rounded{
     border-radius: 5%;
 }
 
+section.portfolio .row.relative [class^="col"]{
+    position: relative;
+}
+
+.cover{
+    transition: .3s;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    border-radius: 5%;
+    background-color: rgba(26, 188, 156, 0.5);
+    opacity: 0;
+}
+
+.cover::after{
+    content: "+";
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 150px;
+}
+
+section.portfolio .row.relative [class^="col"]:hover .cover{
+    display: inline-block;
+    opacity: 1;
+}
+
 /******************************************************************
 ABOUT
 ******************************************************************/
@@ -166,6 +214,11 @@ section.about a.btn.mybtn{
     border-color: white;
     color: white;
     margin-top: 30px;
+}
+
+section.about a.btn.mybtn:hover{
+    background-color: rgba(255, 255, 255, .1);
+    box-shadow: 1px 1px 3px rgba(50, 50, 50, .2);
 }
 
 a.btn.mybtn i.m-right{
@@ -201,6 +254,12 @@ section.contact-me form.myform label{
     margin-bottom: 0px;
 }
 
+section.contact-me button.btn.mybtn:hover{
+    background-color: rgba(26, 188, 156, 0.8);
+    box-shadow: 1px 1px 3px rgba(50, 50, 50, .2);
+    color: white;
+}
+
 /******************************************************************
 TOP FOOTER
 ******************************************************************/
@@ -208,3 +267,20 @@ footer.top-footer li a.mybtn{
     border-color: white;
     background-color: transparent;
 }
+
+.scale{
+    transition: transform 0.3s;
+}
+
+footer.top-footer li.scale:hover{
+    transform: scale(1.1);
+}
+
+footer.top-footer li.scale:hover a.btn.mybtn{
+    color: white;
+}
+
+footer.top-footer p a.myemerald:hover{
+    color: rgb(36, 198, 166);
+}
+
